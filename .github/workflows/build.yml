@@ -15,9 +15,8 @@ jobs:
         submodules: recursive
         
     - name: Install dependencies
-      run: apt install -y gcc g++ make cmake freeglut3-dev libsfml-dev
-    
-
+      run: |
+        sudo apt install -y gcc g++ make cmake freeglut3-dev libsfml-dev
 
     - name: CMake build
       run: |
